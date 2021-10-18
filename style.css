@@ -1,5 +1,5 @@
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #024873;
     text-align: center;
 }
@@ -22,7 +22,7 @@ h2 {
 }
 
 .bg{
-  background-color: #dac292;
+  background-color: aliceblue;
 }
 
 .content{
@@ -114,3 +114,31 @@ h2 {
     background: #125688;
     color: white;
   }
+
+  .container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas: "left header right"
+                         "left main right"
+                         "left footer right";
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+ 
+  .header{
+    background: beige;
+    grid-area: header;
+    padding: 20px;
+  }
+
+  .main{
+    background: floralwhite;
+    grid-area: main;
+    padding: 20px;
+  }
+ 
+  .footer{
+    background: beige;
+    grid-area: footer;
+    padding: 20px;
+  }
+
